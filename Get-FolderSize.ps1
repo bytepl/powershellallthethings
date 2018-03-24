@@ -1,3 +1,16 @@
+<#
+.SYNOPSIS
+Retrieves the size of the folder.
+.DESCRIPTION
+The Get-FolderSize function retrieves size of the given folder and all the subfolders within it.
+.PARAMETER path
+Path to the folder. This parameter is mandatory.
+.EXAMPLE
+Get-FolderSize C:/Example
+Gets the size of the C:/Example folder.
+.NOTES
+For the function to work, Robocopy must be installed in one of the directories included in PATH enviromental variable. This tool is a part of standard OS installation beginning with Windows Vista and Windows Server 2008.
+#>
 function Get-FolderSize {
     [CmdletBinding()]
     param (
